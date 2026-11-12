@@ -42,15 +42,15 @@ A lista de cidades favoritas, os dados da última cidade selecionada e a prefer�
 
 ### Tela inicial com cidades favoritas
 
-![Tela inicial com cidades favoritas](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11.jpeg)
+<img src="assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11.jpeg" alt="Tela inicial com cidades favoritas" width="320">
 
 ### Busca e resultados de cidades
 
-![Busca de cidades e resultados](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%281%29.jpeg)
+<img src="assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%281%29.jpeg" alt="Busca de cidades e resultados" width="320">
 
 ### Previsão de quatro dias e gráfico de temperaturas
 
-![Previsão de quatro dias e gráfico de temperaturas](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%282%29.jpeg)
+<img src="assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%282%29.jpeg" alt="Previsão de quatro dias e gráfico de temperaturas" width="320">
 
 ## Organização do código
 
