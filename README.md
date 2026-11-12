@@ -10,6 +10,8 @@ Aplicativo Flutter para pesquisar cidades brasileiras e consultar a previsão de
 - Converte as siglas meteorológicas para descrições em português conforme a tabela oficial do serviço.
 - Mostra a data de atualização informada pela API, permite atualizar manualmente e puxar a tela para atualizar.
 - Apresenta gráfico de linhas com temperaturas mínimas e máximas.
+- Oferece tema claro e escuro, com preferência salva no dispositivo.
+- Permite marcar cidades favoritas, abrir a previsão diretamente pela lista e remover favoritas.
 - Trata falhas de conexão, respostas inválidas, campos ausentes e buscas sem resultados.
 - Identifica o CPTEC/INPE como fonte dos dados.
 
@@ -34,11 +36,21 @@ O app consulta os endpoints do CPTEC/INPE por HTTPS. A conexão com a internet �
 
 ## Persistência local
 
-O código e o nome da localidade selecionada, além da UF, são guardados no armazenamento de preferências do dispositivo. Ao iniciar o app, a última cidade é reaberta para mostrar sua previsão. A previsão não é armazenada em cache; os dados meteorológicos são consultados novamente no CPTEC/INPE.
+A lista de cidades favoritas, os dados da última cidade selecionada e a preferência pelo tema claro ou escuro são guardados no armazenamento de preferências do dispositivo. A previsão não é armazenada em cache; os dados meteorológicos são consultados novamente no CPTEC/INPE.
 
 ## Capturas de tela
 
-Inclua nesta seção capturas feitas no emulador ou dispositivo após executar o app. Sugestão de arquivos: `screenshots/busca.png`, `screenshots/resultados.png` e `screenshots/previsao-grafico.png`.
+### Tela inicial com cidades favoritas
+
+![Tela inicial com cidades favoritas](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11.jpeg)
+
+### Busca e resultados de cidades
+
+![Busca de cidades e resultados](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%281%29.jpeg)
+
+### Previsão de quatro dias e gráfico de temperaturas
+
+![Previsão de quatro dias e gráfico de temperaturas](assets/WhatsApp%20Image%202026-11-12%20at%2018.04.11%20%282%29.jpeg)
 
 ## Organização do código
 
@@ -48,6 +60,8 @@ Inclua nesta seção capturas feitas no emulador ou dispositivo após executar o
 - `lib/services/`: comunicação HTTP e leitura do XML do CPTEC/INPE.
 - `lib/widgets/`: cartão diário e gráfico de temperaturas reutilizáveis.
 - `lib/utils/`: descrições das siglas e formatação de datas.
+- `assets/icon/app_icon.svg`: arte vetorial original do ícone.
+- `tools/generate_app_icons.ps1`: gera as versões nos tamanhos exigidos por Android e iOS.
 
 ## Serviço de dados
 
